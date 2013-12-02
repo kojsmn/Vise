@@ -7,16 +7,13 @@
  * using vector for both the main array and for the actual adjacency "lists"
  */
 
-
 #include <vector>
-
 
 //The move class has only a cost and a destination.
 class possibleMove{
 public:
   possibleMove(int d){dest = d;};
   possibleMove(){dest = -1;};
-
 
   int dest; //Destination node number
 };
@@ -35,6 +32,3 @@ public:
         hexSpace* downleft;
         std::vector<possibleMove>moveList;
 };
-
-
-
